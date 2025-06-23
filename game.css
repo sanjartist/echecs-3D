@@ -1,11 +1,27 @@
+ txkde8-codex/créer-un-jeu-d-échecs-3d
 
+
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+
+ 
+ main
+ main
 .board {
   width: 480px;
   height: 480px;
   margin: 40px auto;
+ txkde8-codex/créer-un-jeu-d-échecs-3d
   perspective: 1000px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
+
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  perspective: 1000px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  perspective: 800px;
+ main
+ main
 }
 
 #board {
@@ -14,7 +30,14 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+ txkde8-codex/créer-un-jeu-d-échecs-3d
   transform: rotateX(10deg);
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  transform: rotateX(25deg);
+
+  transform: rotateX(60deg);
+ main
+ main
   transform-origin: center;
 }
 
@@ -23,11 +46,34 @@
   width: 100%;
   height: 100%;
 }
+ txkde8-codex/créer-un-jeu-d-échecs-3d
 .square.light {
   background: #f0d9b5;
 }
 .square.dark {
   background: #b58863;
+
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+.square.light {
+  background: #eeeec0;
+}
+.square.dark {
+  background: #769656;
+
+
+.square.light,
+.square.dark {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.square.light {
+  background: #f0d9b5;
+}
+
+.square.dark {
+  background: #b58863;
+ main
+ main
 }
 
 .piece {
@@ -36,4 +82,11 @@
   line-height: 60px;
   cursor: grab;
   user-select: none;
+ txkde8-codex/créer-un-jeu-d-échecs-3d
+
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+ main
+ main
 }
