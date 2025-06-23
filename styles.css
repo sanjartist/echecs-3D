@@ -2,16 +2,37 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+
 }
 
 body {
   background: linear-gradient(135deg, #05070c, #1b1045);
   color: #fff;
+ main
   overflow: hidden;
 }
 
 #background-board {
   position: absolute;
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  transform: perspective(1000px) rotateX(25deg);
+  transform-origin: center;
+}
+
+#background-board .light {
+  background: #eeeec0;
+}
+#background-board .dark {
+  background: #769656;
+
   top: 50%;
   left: 50%;
   width: 600px;
@@ -37,6 +58,7 @@ body {
 
 #background-board .dark {
   background: #b58863;
+ main
 }
 
 .menu {
@@ -44,11 +66,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+
   background: rgba(20, 20, 30, 0.9);
   padding: 20px 40px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.6);
+ main
 }
 
 .menu h1 {
@@ -63,7 +92,11 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 5px;
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  background: #333;
+
   background: #3d5dd9;
+ main
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s, background 0.3s;
@@ -71,5 +104,9 @@ body {
 
 .menu button:hover {
   transform: scale(1.1);
+ xs42zb-codex/créer-un-jeu-d-échecs-3d
+  background: #555;
+
   background: #6b3fd7;
+ main
 }
