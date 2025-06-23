@@ -14,15 +14,26 @@ html, body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+ th6edj-codex/créer-un-jeu-d-échecs-3d
+  transform: perspective(800px) rotateX(40deg);
+
   transform: perspective(600px) rotateX(60deg);
+main
   transform-origin: center;
 }
 
 #background-board .light {
+th6edj-codex/créer-un-jeu-d-échecs-3d
+  background: #eeeec0;
+}
+#background-board .dark {
+  background: #769656;
+
   background: #f0d9b5;
 }
 #background-board .dark {
   background: #b58863;
+main
 }
 
 .menu {
