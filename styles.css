@@ -2,38 +2,41 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #05070c, #1b1045);
+  color: #fff;
   overflow: hidden;
 }
 
 #background-board {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%) perspective(800px) rotateX(60deg);
+  transform-style: preserve-3d;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
- th6edj-codex/créer-un-jeu-d-échecs-3d
-  transform: perspective(800px) rotateX(40deg);
+  border: 12px solid #402615;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  background: #402615;
+}
 
-  transform: perspective(600px) rotateX(60deg);
-main
-  transform-origin: center;
+#background-board .light,
+#background-board .dark {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
 }
 
 #background-board .light {
-th6edj-codex/créer-un-jeu-d-échecs-3d
-  background: #eeeec0;
-}
-#background-board .dark {
-  background: #769656;
-
   background: #f0d9b5;
 }
+
 #background-board .dark {
   background: #b58863;
-main
 }
 
 .menu {
@@ -41,10 +44,11 @@ main
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(20, 20, 30, 0.9);
   padding: 20px 40px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
 .menu h1 {
@@ -59,7 +63,7 @@ main
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background: #333;
+  background: #3d5dd9;
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s, background 0.3s;
@@ -67,5 +71,5 @@ main
 
 .menu button:hover {
   transform: scale(1.1);
-  background: #555;
+  background: #6b3fd7;
 }
