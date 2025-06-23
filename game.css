@@ -1,8 +1,11 @@
+
 .board {
   width: 480px;
   height: 480px;
   margin: 40px auto;
   perspective: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 #board {
@@ -11,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  transform: rotateX(60deg);
+  transform: rotateX(40deg);
   transform-origin: center;
 }
 
@@ -21,10 +24,10 @@
   height: 100%;
 }
 .square.light {
-  background: #f0d9b5;
+  background: #eeeec0;
 }
 .square.dark {
-  background: #b58863;
+  background: #769656;
 }
 
 .piece {

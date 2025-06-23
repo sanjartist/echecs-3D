@@ -14,15 +14,15 @@ html, body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  transform: perspective(600px) rotateX(60deg);
+  transform: perspective(800px) rotateX(40deg);
   transform-origin: center;
 }
 
 #background-board .light {
-  background: #f0d9b5;
+  background: #eeeec0;
 }
 #background-board .dark {
-  background: #b58863;
+  background: #769656;
 }
 
 .menu {
